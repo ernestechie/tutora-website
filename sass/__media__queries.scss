@@ -1,0 +1,205 @@
+@media (max-width: 1024px) {
+
+  /*  HEADER SECTION */
+  #header {
+    height: 50vh;
+
+    #navbar .navbar {
+      justify-content: space-between;
+
+      .navbar__links {
+        width: 50%;
+
+        .navbar__links li a {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+
+    .mobile__deactivated {
+      display: none;
+      pointer-events: none;
+    }
+  }
+
+
+  #how__it__works{
+    width: 100%;
+
+  }
+}
+
+
+@media (max-width: 480px) {
+  #header{
+    width: 100vw;
+    height: 115vh;
+    padding: 2rem;
+
+    #navbar {
+      height: 12vh;
+      width: 100%;
+
+      .navbar {
+        padding: 1rem .5rem;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .navbar__logo{
+          font-size: 1.3rem;
+          margin: 1rem auto .5rem auto;
+          margin-bottom: 0.5rem;
+        }
+        .navbar__links {
+          width: 100%;
+          padding: 0.5rem;
+          justify-content: space-evenly;
+
+          li a{
+            margin: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  #home__content {
+    margin-top: 10rem;
+    @include gridColumns (1fr);
+  
+    .contents {
+      text-align: center;
+
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      p{
+        line-height: 1.8;
+      }
+    }
+
+    .showcase {
+      width: 95%;
+      margin: auto;
+      top: -30px;
+
+      img {
+        animation: none;
+        opacity: 0.9;
+      }
+    }
+  }
+
+  #how__it__works {
+    padding: 1.5rem;
+
+    & > h1 {
+      text-align: center;
+      font-size: 2rem
+    }
+
+    .grid__container {
+      padding: 0;
+      @include gridColumns (repeat(1, 100%));
+
+      .grid__item{
+        border-radius: .5rem;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  #featured__subjects {
+    @include gridColumns (repeat(1, 1fr));
+    height: auto;
+  
+    .featured__subjects .contents{
+      h1 {
+        font-size: 2rem;
+      }
+    }
+    .subjects__grid {
+      @include gridColumns (repeat(2, 50%));
+  
+    }
+  }
+  
+  #benefits__grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .benefits__grid__image {
+      @include flexCenter(row, 0);
+      
+      .image__container{
+        width: 320px;
+        height: 220px;
+        border-radius: .5rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .benefits__grid__content .grid__content {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  #students__testimonial {
+    height: auto;
+
+    .testimonial{
+      width: 95%;
+      @include flexCenter (column, 1rem);
+      
+      .testimnonial__card{
+        // width: 50%;
+        // height: 80%;
+        margin: 0;
+        @include flexCenter (column, 1rem);
+
+        .testimonial__card__image {
+          width: 100%;
+        }
+      }
+    } 
+  }
+
+
+  #start__section {
+    height: 340px;
+    padding: 1rem;
+
+    .start__div{
+      padding: 1rem;
+      height: 300px;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+
+      &__content {
+        width: 95%;
+
+        h1 {
+          margin: 1rem;
+          font-size: 1.5rem;
+        }
+      } 
+    }
+  }
+
+  #footer {
+    height: auto;
+    padding: 2rem;
+    @include gridColumns (repeat(2, 1fr));
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+  }
+}

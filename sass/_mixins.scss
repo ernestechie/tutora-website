@@ -1,0 +1,31 @@
+@mixin gridColumns ($columnAreas){
+  display: grid;
+  grid-template-columns: ($columnAreas);
+}
+
+@mixin flexCenter ($flexDirection, $Gap){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $flexDirection;
+  gap: $Gap;
+}
+
+@mixin gridItemClass {
+  padding: .5rem;
+  height: 15rem;
+  line-height: 1.8;
+  border-radius: .8rem;
+  background: $light-colour;
+  text-align: center;
+  @include flexCenter (column, 0);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+@mixin widePrimaryDiv {
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  background: $primary-colour;
+}

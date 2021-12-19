@@ -1,0 +1,118 @@
+/* GLOBAL STYLES */
+html, body{
+  scroll-behavior: smooth;
+  font-family: 'Readex Pro', sans-serif;
+  overflow-x: hidden;
+}
+
+/* UTILITY CLASSES */
+
+.btn{
+  display: inline-block;
+  border-radius: .5rem;
+  padding: .8rem 2rem;
+
+  &__light{
+    color: $dark-colour;
+    background: $light-colour;
+  }
+
+  &__dark{
+    color: $light-colour;
+    background: $dark-colour;
+  }
+  &__primary{
+    color: $light-colour;
+    background: $primary-colour;
+  }
+  &__secondary{
+    color: $light-colour;
+    background: $secondary-colour;
+  }
+  &__transperent{
+    color: $light-colour;
+    background: $transperent-colour;
+  }
+}
+
+.text__primary{
+  color: $primary-colour;
+}
+
+#how__it__works .flex__icon{
+  padding: 1rem;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.flex__icon.fa-search{
+  color: rgba(255, 111, 0, 0.5);
+  background: rgba(255, 255, 0, 0.5);
+}
+.flex__icon.fa-globe-africa{
+  color: rgba(255, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.2);
+}
+.flex__icon.fa-book-open{
+  padding: .8rem 1rem;
+  color: rgba(0, 0, 255, 0.5);
+  background: rgba(0, 0, 255, 0.2);
+}
+.flex__icon.fa-record-vinyl {
+  color: rgba(128, 0, 128, 0.5);
+  background: rgba(128, 0, 128, 0.2);
+}
+
+.info__icon, .subject__icon{
+  width: 3.2rem;
+  margin-bottom: .5rem;
+}
+
+.subject__icon{
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+
+/* SKEWED RECTANGLES ----- USED ALL OVER THE HOME PAGE */
+.skewed{
+  z-index: 5;
+  left: -2rem;
+  bottom: 10px;
+  width:105%;
+  height: 150px;
+  position: absolute;
+  background: $light-colour;
+  transform: skew(-5.75deg, -5.75deg);
+}
+
+p.tiny {
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.star, .bullet {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  background: rgb(255, 255, 0);
+}
+
+.bullet {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  background: rgba(115, 0, 255, 0.5);
+  transition: background 0.4s ease-in-out;
+
+  &.current {
+    background: rgba(115, 0, 255, 1);
+  }
+
+  &:hover {
+    background: rgba(115, 0, 255, 1);
+  }
+}
+
+
