@@ -1,5 +1,10 @@
 # Tutora Website
 
-A website for hiring freelance tutors
+> A website for hiring freelance tutors
 
-View here https://tutora.netlify.app
+> View [Tutora here](https://tutora.netlify.app)
+
+# Technologies Used
+- HTML5
+- SASS
+- CSS
